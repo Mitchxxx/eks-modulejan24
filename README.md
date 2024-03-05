@@ -13,8 +13,9 @@
 
 ~~~ 
 
-module "eks-module" {
-  source         = "github.com/Mitchxxx/eks-modulejan24"
+module "modulejan24" {
+  source  = "app.terraform.io/Adioma_Consulting_Limited/modulejan24/eks"
+  version = "1.0.0"
   region         = "Enter your Providers region here"
   vpc_cidr       = "10.0.0.0/16"
   dns_hostnames  = true
