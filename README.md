@@ -5,23 +5,23 @@
 ~~~ 
 
 module "modulejan24" {
-  source  = "app.terraform.io/Adioma_Consulting_Limited/modulejan24/eks"
-  version = "1.0.0"
-  region         = "Enter your Providers region here"
-  vpc_cidr       = "10.0.0.0/16"
-  dns_hostnames  = true
-  dns_support    = true
-  pub_one_cidr   = "10.0.1.0/24"
-  pub_two_cidr   = "10.0.2.0/24"
-  priv_one_cidr  = "10.0.3.0/24"
-  priv_two_cidr  = "10.0.4.0/24"
-  az_one         = "Enter your first az"
-  az_two         = "Enter your second az"
-  vpc_id         = "aws_vpc.eks_vpc.id"
-  eks_version    = "1.26"
-  ami_type       = "AL2_x86_64"
-  instance_types = ["m5.large", "m5.large", "m5.large"]
-  capacity_type  = "ON_DEMAND"
+  source                 = "github.com/Mitchxxx/terraform-eks-modulejan24"
+  region                 = "Enter your Providers region here"
+  vpc_cidr_block         = "10.0.0.0/16"
+  vpc_dns_hostnames      = true
+  vpc_dns_support        = true
+  public_sub1_cidr_bock  = "10.0.1.0/24"
+  public_sub2_cidr_bock  = "10.0.2.0/24"
+  private_sub1_cidr_bock = "10.0.3.0/24"
+  private_sub2_cidr_bock = "10.0.4.0/24"
+  dest_cidr_bock         = "0.0.0.0/0"
+  availability_zone_1    = "Enter your first az"
+  availability_zone_2    = "Enter your second az"
+  eks_version            = "1.27"
+  ami_type               = "AL2_x86_64"
+  cluster_name           = "Enter Name of cluster here"
+  capacity_type          = "ON_DEMAND"
+  node_group_name        = "Enter name of NodeGroup here"
 
 }
 
