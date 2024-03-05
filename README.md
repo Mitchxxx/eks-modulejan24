@@ -1,12 +1,3 @@
-..... PUBLISH TO GITHUB .....
-
-1. Create an empty repo with just MIT License or create another directory using mkdir in your main working directory, you can call it my eks module, this will be your official published module on github
-
-2. Copy all the files from your modules directory onto this new clone repo or directory (main, vars, outputs, and data etc)
-
-3. cd into the new folder and add a README.md file also, to tell or instruct people on how to use your EKS Module. see sample readme file below. copy and paste.
-
-
 # MY AWESOME TERRAFORM MODULE TO PROVISION EKS CLUSTER WITH CUSTOM NETWORKING  ----->
 
 # Sample usage:
